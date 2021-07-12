@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/home/home_page.dart';
+import 'package:myapp/home/widgets/home_page.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class SplashPage extends StatefulWidget {
@@ -21,7 +21,7 @@ Widget _introScreen() {
   return Stack(
     children: <Widget>[
       SplashScreen(
-        seconds: 5,
+        seconds: 3,
         gradientBackground: LinearGradient(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,

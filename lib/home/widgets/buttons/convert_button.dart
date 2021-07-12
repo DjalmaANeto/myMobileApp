@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/converts/widgets/converts_page.dart';
 
 class ConvertButton extends StatelessWidget {
   @override
@@ -8,7 +9,14 @@ class ConvertButton extends StatelessWidget {
       width: 300,
       height: 125,
       child: RaisedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) {
+              return ConvertPage();
+            }),
+          );
+        },
         child: const Text(
           'Convert',
           style: TextStyle(fontSize: 40),
